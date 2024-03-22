@@ -5,9 +5,169 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.conatinar{
+  position: absolute;
+  border-radius: 10px;
+  width: 750px;
+  padding: 0px;
+  box-shadow: 0px 0px 2px 2px #dddddd;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.conatinar .left{
+  text-align: right;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  background: #b92b27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b92b27, #1565c0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b92b27, #1565c0);
+}
+.conatinar .right{
+  width: 50%;
+  padding: 10px;
+}
+
+.left .item .img{
+  text-align: left;
+  width: 50px;
+  height: auto;
+  padding-right: 15px;
+}
+.left .item .img img{
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px 1px #000000;
+}
+.left .item{
+  align-items: center;
+  margin-bottom: 0px;
+  display: flex;
+  text-align: left;
+  justify-content: flex-start;
+  padding: 5px 10px;
+}
+.left .item:hover{
+ 
+  border-radius: 5px;
+  background-color: #0000003c;
+}
+.left .item .text{
+  width: 100%;
+  padding-right: 10px;
+}
+.left .item .text .title{
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.left .item .text .detail{
+  margin-top: 5px;
+  font-size: 14px;
+  color: #ffffff;
+}
+/* .left .item .btn{
+  width: 30%;
+} */
+.btn button {
+  background-color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 20px;
+  color: #1565c0;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px 0.5px #000000;
+  transition: transform 0.3s ease;
+}
+
+.btn button:hover {
+  transform: translateY(-3px);
+}
+.Red{
+  color: #ffffff !important;
+  background-color: #ff0000;
+  padding: 1px 5px;
+  margin: 0;
+  border-radius: 2px;
+  display: inline-block;
+}
+.Green{
+  color: #ffffff !important;
+  background-color: #0a9a00;
+  padding: 1px 5px;
+  margin: 0;
+  border-radius: 2px;
+  display: inline-block;
+}
+.Black{
+  color: #ffffff !important;
+  background-color: #cd16ff;
+  padding: 1px 5px;
+  margin: 0;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.Add button{
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.Add2 button{
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #1565c0;
+  color: #ffffff;
+}
+.Add3 button{
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+.left .form{
+  margin-top: 15px;
+  text-align: right;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 5px;
+} 
+.right form div label,
+.left .form label{
+  color: #1565c0;
+  font-weight: bold;
+  font-size: 14px;
+  padding-right: 5px;
+} 
+.right form div input,
+.right form div select,
+.left .form input{
+  border: 1px solid #1565c0;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 5px;
+} 
+.right form div{
+  display: flex;
+  justify-content: space-between;
+}
+.right form .btn{
+  float: right;
+}
+.hide{
+  display: hide;
 }
