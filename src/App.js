@@ -51,7 +51,7 @@ export default function App() {
       </div>
         <div className="right">
         {Select && <h2>{`Share bill with ${Select.name}`}</h2>}
-        {Select && <Form2 Friend={Select} UpdateInfo={UpdateInfo}/>}
+        {Select && <Form2 Friend={Select} key={Select.id} UpdateInfo={UpdateInfo}/>}
         </div>
       </div>
     </div>
